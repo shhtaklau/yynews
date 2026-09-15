@@ -80,6 +80,11 @@ jobs:
           S3_REGION: ${{ secrets.S3_REGION }}
           GITHUB_ACTIONS: true
         run: uv run python -m trendradar
+      - name: Copy yymusic.html
+        if: always()
+        run: |
+          mkdir -p output/html
+          cp yymusic.html output/html/yymusic.html
 
       - name: Upload HTML reports
         uses: actions/upload-artifact@v4
