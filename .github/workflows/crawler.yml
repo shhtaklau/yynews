@@ -85,6 +85,8 @@ jobs:
         run: |
           mkdir -p output/html
           cp yymusic.html output/html/yymusic.html
+          cp yyblog.html output/html/yyblog.html
+
 
       - name: Upload HTML reports
         uses: actions/upload-artifact@v4
