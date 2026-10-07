@@ -86,6 +86,7 @@ jobs:
           mkdir -p output/html
           cp yymusic.html output/html/yymusic.html
           cp yyblog.html output/html/yyblog.html
+          cp global_radio.html output/html/global_radio.html
 
 
       - name: Upload HTML reports
